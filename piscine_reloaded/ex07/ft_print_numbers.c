@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 21:30:58 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/04 20:09:15 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/10/04 20:08:03 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/10/04 20:22:18 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_alphabet(void);
+#include <unistd.h>
+
+void	ft_print_numbers(void);
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	c;
+	char	number;
 
-	c = 'a';
-	while (c <= 'z')
+	number = '0';
+	while (number <= 57)
 	{
-		ft_putchar(c);
-		c++;
+		ft_putchar(number);
+		number++;
 	}
 }
 

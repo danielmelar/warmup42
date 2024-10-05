@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 21:30:58 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/04 20:09:15 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/10/04 21:09:46 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/10/04 22:08:35 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_alphabet(void);
+void	ft_swap(int *a, int *b);
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+void	ft_swap(int *a, int *b)
 {
-	char	c;
+	int temp;
 
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
