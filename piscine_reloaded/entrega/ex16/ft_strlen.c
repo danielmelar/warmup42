@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 18:43:40 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/08 19:05:13 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/10/08 17:58:14 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/10/08 17:58:33 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb);
+int	ft_strlen(char *str);
 
-int	ft_recursive_factorial(int nb)
+int	ft_strlen(char *str)
 {
-	if (nb > 12 || nb < 1)
-		return (0);
-	if (nb < 1)
-		return (1);
-	else
-		return (ft_recursive_factorial(nb - 1) * nb);
+	int	len;
+
+	len = 0;
+	while (*str)
+	{
+		len++;
+		str++;
+	}
+	return (len);
 }

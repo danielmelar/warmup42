@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 18:43:40 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/08 19:05:13 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/10/04 20:08:03 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/10/04 20:22:18 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb);
+#include <unistd.h>
 
-int	ft_recursive_factorial(int nb)
+void	ft_print_numbers(void);
+
+void	ft_putchar(char c);
+
+void	ft_print_numbers(void)
 {
-	if (nb > 12 || nb < 1)
-		return (0);
-	if (nb < 1)
-		return (1);
-	else
-		return (ft_recursive_factorial(nb - 1) * nb);
+	char	number;
+
+	number = '0';
+	while (number <= 57)
+	{
+		ft_putchar(number);
+		number++;
+	}
 }
