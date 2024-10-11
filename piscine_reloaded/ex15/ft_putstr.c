@@ -6,7 +6,7 @@
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:33:18 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/08 18:33:41 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/10/10 20:45:52 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr(char *str)
 	while (*str)
 	{
 		ft_putchar(*str);
-		str++;	
+		str++;
 	}
 }
 

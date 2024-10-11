@@ -1,1 +1,1 @@
-ifconfig -a | grep -ioE '([a-z0-9]{2}:){5}..'
+ifconfig | grep -i ether | awk '{print $2}'

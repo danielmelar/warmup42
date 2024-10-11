@@ -6,7 +6,7 @@
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:32:10 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/10/08 18:02:55 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:06:46 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,11 @@ void	ft_print_params(char argc, char **argv)
 	while (param < argc)
 	{
 		if (argc == 1)
-			break;
+			break ;
 		ft_putstr(argv[param]);
 		ft_putchar('\n');
 		param++;
 	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }
 
 void	ft_putstr(char *str)
